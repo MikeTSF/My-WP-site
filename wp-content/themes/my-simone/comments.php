@@ -40,7 +40,7 @@ if ( post_password_required() ) {
 			?>
 		</ol><!-- .comment-list -->
 
-		
+
 		<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // are there comments to navigate through ?>
 			<nav id="comment-nav-below" class="comment-navigation clear" role="navigation">
 				<h1 class="screen-reader-text"><?php _e( 'Comment navigation', 'my-simone' ); ?></h1>
