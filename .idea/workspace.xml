@@ -47,11 +47,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/my-simone/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="22541" max-vertical-offset="25381">
-              <caret line="1352" column="17" selection-start-line="1352" selection-start-column="17" selection-end-line="1352" selection-end-column="17" />
+            <state vertical-scroll-proportion="0.95561355" vertical-offset="24649" max-vertical-offset="25483">
+              <caret line="1493" column="1" selection-start-line="1493" selection-start-column="1" selection-end-line="1493" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -81,22 +81,35 @@
         <entry file="file://$PROJECT_DIR$/wp-content/themes/my-simone/comments.php">
           <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
+<<<<<<< HEAD
             <state vertical-scroll-proportion="0.5086321" vertical-offset="212" max-vertical-offset="1054">
               <caret line="42" column="8" selection-start-line="42" selection-start-column="8" selection-end-line="42" selection-end-column="8" />
 =======
             <state vertical-scroll-proportion="0.0" vertical-offset="212" max-vertical-offset="1054">
               <caret line="40" column="31" selection-start-line="40" selection-start-column="31" selection-end-line="40" selection-end-column="31" />
+=======
+            <state vertical-scroll-proportion="-13.423077" vertical-offset="229" max-vertical-offset="1054">
+              <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+>>>>>>> bugfix
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="404.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/mysite/mysite/404.php">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="1054">
               <caret line="2" column="56" selection-start-line="2" selection-start-column="56" selection-end-line="2" selection-end-column="56" />
 >>>>>>> mynewsite
+=======
+      <file leaf-file-name="css.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Desktop/exercise_files/Chapter_02/02_16/_assets/css.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="561">
+              <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="27" selection-end-column="2" />
+>>>>>>> bugfix
               <folding />
             </state>
           </provider>
@@ -124,9 +137,13 @@
         <option value="$PROJECT_DIR$/wp-content/themes/my-simone/content-single.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/my-simone/layouts/content-sidebar.css" />
         <option value="$PROJECT_DIR$/wp-content/themes/my-simone/inc/template-tags.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/my-simone/style.css" />
-        <option value="$PROJECT_DIR$/wp-content/themes/my-simone/comments.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/mysite/mysite/404.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/my-simone/comments.php" />
+<<<<<<< HEAD
+        <option value="$PROJECT_DIR$/wp-content/themes/mysite/mysite/404.php" />
+=======
+        <option value="$PROJECT_DIR$/wp-content/themes/my-simone/style.css" />
+>>>>>>> bugfix
       </list>
     </option>
   </component>
@@ -701,16 +718,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/my-simone/style.css">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/my-simone/comments.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="22541" max-vertical-offset="25381">
-          <caret line="1352" column="17" selection-start-line="1352" selection-start-column="17" selection-end-line="1352" selection-end-column="17" />
+        <state vertical-scroll-proportion="-13.423077" vertical-offset="229" max-vertical-offset="1054">
+          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/my-simone/comments.php">
+    <entry file="file://$USER_HOME$/Desktop/exercise_files/Chapter_02/02_16/_assets/css.txt">
       <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="561">
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="27" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/my-simone/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
 <<<<<<< HEAD
         <state vertical-scroll-proportion="0.5086321" vertical-offset="212" max-vertical-offset="1054">
           <caret line="42" column="8" selection-start-line="42" selection-start-column="8" selection-end-line="42" selection-end-column="8" />
@@ -726,6 +752,10 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="1054">
           <caret line="2" column="56" selection-start-line="2" selection-start-column="56" selection-end-line="2" selection-end-column="56" />
 >>>>>>> mynewsite
+=======
+        <state vertical-scroll-proportion="0.95561355" vertical-offset="24649" max-vertical-offset="25483">
+          <caret line="1493" column="1" selection-start-line="1493" selection-start-column="1" selection-end-line="1493" selection-end-column="1" />
+>>>>>>> bugfix
           <folding />
         </state>
       </provider>
