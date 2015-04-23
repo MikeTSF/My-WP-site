@@ -80,8 +80,8 @@
       <file leaf-file-name="comments.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/my-simone/comments.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.035135135" vertical-offset="212" max-vertical-offset="1037">
-              <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.5175676" vertical-offset="212" max-vertical-offset="1054">
+              <caret line="42" column="8" selection-start-line="42" selection-start-column="8" selection-end-line="42" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -109,8 +109,8 @@
         <option value="$PROJECT_DIR$/wp-content/themes/my-simone/content-single.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/my-simone/layouts/content-sidebar.css" />
         <option value="$PROJECT_DIR$/wp-content/themes/my-simone/inc/template-tags.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/my-simone/comments.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/my-simone/style.css" />
+        <option value="$PROJECT_DIR$/wp-content/themes/my-simone/comments.php" />
       </list>
     </option>
   </component>
@@ -681,8 +681,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/my-simone/comments.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.035135135" vertical-offset="212" max-vertical-offset="1037">
-          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.5175676" vertical-offset="212" max-vertical-offset="1054">
+          <caret line="42" column="8" selection-start-line="42" selection-start-column="8" selection-end-line="42" selection-end-column="8" />
           <folding />
         </state>
       </provider>
