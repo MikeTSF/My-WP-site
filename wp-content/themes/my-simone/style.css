@@ -1486,3 +1486,9 @@ object {
 .site-info {
 	text-align: center;
 }
+
+footer {
+	background: rgb(157,189,198);
+	padding: 2em;
+	font-size: 0.8em;
+}
