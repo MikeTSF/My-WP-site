@@ -1,9 +1,9 @@
 /*
-Theme Name: My Simone
-Theme URI: http://lynda.com/
-Author: Morten Rand-Hendriksen
-Author URI: http://lynda.com/mor10/
-Description: My Simone is a custom responsive theme based on _s that was built as part of the WordPress: Building Themes From Scratch with Underscores course at lynda.com
+Theme Name: My site
+Theme URI: http://tjonsienfat.net/
+Author: Michael Tjon-Sien-Fat
+Author URI: http://tjonsienfat.net/
+Description: My site is a custom responsive theme based on _s that was built as part of the WordPress: Building Themes From Scratch with Underscores course at lynda.com
 Version: 0.1
 License: GNU General Public License
 License URI: license.txt
@@ -1488,7 +1488,6 @@ object {
 }
 
 footer {
-	background: rgb(157,189,198);
 	padding: 2em;
 	font-size: 0.8em;
 	padding: 10px;
