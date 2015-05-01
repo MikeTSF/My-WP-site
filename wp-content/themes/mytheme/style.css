@@ -1,0 +1,16 @@
+/*
+Theme Name: BS3 Theme
+Theme URI: http://tjonsienfat.net
+Description: My Bootstrap 3 responsive theme
+Version: 0.1
+Author: Michael Tjon-Sien-Fat
+Author URI: http://tjonsienfat.net
+*/
+
+@import url('css/bootstrap.min.css');
+
+#custom-bootstrap-menu {
+    padding-left: 200px;
+    padding-right: 200px;
+}
+

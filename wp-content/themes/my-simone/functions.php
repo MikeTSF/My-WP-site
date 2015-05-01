@@ -48,6 +48,8 @@ function my_simone_setup() {
 
 	// Enable support for Post Formats.
 	add_theme_support( 'post-formats', array( 'aside' ) );
+	add_image_size('large-thumb', 1060, 650, true);
+	add_image_size('index-thumb', 780, 250, true);
 
 	// Setup the WordPress core custom background feature.
 //	add_theme_support( 'custom-background', apply_filters( 'my_simone_custom_background_args', array(

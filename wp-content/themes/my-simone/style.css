@@ -1,5 +1,5 @@
 /*
-Theme Name: My site
+Theme Name: My simone
 Theme URI: http://tjonsienfat.net/
 Author: Michael Tjon-Sien-Fat
 Author URI: http://tjonsienfat.net/
@@ -684,6 +684,30 @@ a:active {
 	margin: 0 1em;
 }
 
+.paging-navigation ul {
+	margin: 0;
+}
+
+.paging-navigation li { display: inline; }
+
+a.page-numbers,
+span.page-numbers {
+	padding: .3em .7em;
+	color: #333;
+	color: hsl(0, 0%, 20%);
+}
+
+a:hover.page-numbers {
+	color: #000;
+	color: hsl(0, 0%, 0%);
+}
+
+.paging-navigation .current {
+	font-weight: bold;
+	color: #000;
+	color: hsl(0, 0%, 0%);
+}
+
 /*--------------------------------------------------------------
 6.0 Accessibility
 --------------------------------------------------------------*/
@@ -797,8 +821,7 @@ X.X Header
 .site-branding {
 	padding: 6rem 0;
 	text-align: center;
-	background: #2c86ba;
-	background: hsl(202, 62%, 45%);
+	background: #FFFFFF;
 }
 .title-box {
 	width: 600px;
@@ -903,6 +926,7 @@ input[type="search"] {
 		border: none;
 	}
 }
+
 /*--------------------------------------------------------------
 9.0 Widgets
 --------------------------------------------------------------*/
@@ -1017,6 +1041,7 @@ input[type="search"] {
 		margin: 0 0 8rem;
 	}
 }
+
 /*--------------------------------------------------------------
 10.0 Content
 --------------------------------------------------------------*/
@@ -1037,6 +1062,7 @@ input[type="search"] {
 .entry-content a {
 	text-decoration: underline;
 }
+
 .entry-content h1,
 .entry-content h2,
 .entry-content h3,
@@ -1138,6 +1164,7 @@ input[type="search"] {
 		line-height: 1.5em;
 	}
 }
+
 /* Meta */
 .category-list {
 	margin: 1.3em 0 1em;
@@ -1228,12 +1255,17 @@ input[type="search"] {
 	}
 }
 
-@media screen and (max-width: 1319px){
-	.posted-on:before {
-		content: ' on ';
-	}
-	.posted-on:after {
-		content: '.';
+.posted-on:before {
+	content: ' on ';
+}
+.posted-on:after {
+	content: '.';
+}
+
+@media screen and (min-width: 1320px) {
+	.single .posted-on:before,
+	.single .posted-on:after {
+		content: '';
 	}
 }
 
@@ -1326,10 +1358,22 @@ ol.children { list-style-type: none; }
 	margin-right: 20px;
 }
 
+.comment-author .fn {
+	font-weight: 900;
+	font-family: 'Lato', sans-serif;
+	font-size: 20px;
+	font-size: 2rem;
+}
+
 .comment-metadata {
 	font-size: 14px;
 	font-size:1.4rem;
 }
+
+.comment-content { font-size: 90%; }
+
+.comment-content,
+.reply { margin-left: 70px; }
 
 .comment-body {
 	padding-bottom: 2em;
@@ -1350,13 +1394,12 @@ ol.children { list-style-type: none; }
 	font-size: 1.4rem;
 }
 
-.comment-content,
-.reply { margin-left: 70px; }
-
-.comment-content a {
-	word-wrap: break-word;
-}
-.bypostauthor {
+.bypostauthor > .comment-body {
+	position: relative;
+	padding: 1em;
+	margin-bottom: 2em;
+	background: hsl(0, 0%, 93%);
+	border: none;
 }
 
 /* Comments responsive */
@@ -1368,6 +1411,56 @@ ol.children { list-style-type: none; }
 	.comment-content,
 	.reply { margin-left: 0; }
 }
+
+.comment-reply-title {
+	margin-bottom: .5em;
+	font-weight: 900;
+	font-size: 30px;
+	font-size: 3rem;
+}
+
+.comment-form {
+	padding-bottom: 4rem;
+	font-family: 'Lato', sans-serif;
+	font-size: 16px;
+	font-size: 1.6rem;
+}
+
+.comment-form textarea {
+	font-family: 'PT Serif', serif;
+	font-size: 18px;
+	font-size: 1.8rem;
+}
+
+.comment-form label { display: block; }
+
+.required { color: red; }
+
+.comment-awaiting-moderation { /* Green background color to make moderation seem less aggressive */
+	padding: .5rem 1rem;
+	margin: 1rem 0;
+	font-family: 'Lato', sans-serif;
+	font-size: 16px;
+	font-size: 1.6rem;
+	color: #fff;
+	color: hsl(0, 0%, 100%);
+	background: #84bd68;
+	background: hsl(100, 39%, 57%);
+}
+
+/*--------------------------------------------------------------
+10.4 Index and Archive
+--------------------------------------------------------------*/
+
+.continue-reading {
+	margin: 0 4rem;
+	font-weight: 900;
+	font-size: 18px;
+	font-size: 1.8rem;
+}
+
+.continue-reading i { margin-left: .5em; }
+
 /*--------------------------------------------------------------
 11.0 Infinite scroll
 --------------------------------------------------------------*/
@@ -1403,7 +1496,8 @@ ol.children { list-style-type: none; }
 .wp-caption-text {
 	text-align: center;
 }
-.wp-caption .wp-caption-text {
+.wp-caption .wp-caption-text,
+.gallery-caption {
 	padding: 0.8075em 1em;
 	font-size: 14px;
 	font-size: 1.4rem;
@@ -1461,6 +1555,41 @@ embed,
 iframe,
 object {
 	max-width: 100%;
+}
+
+/* Featured Images */
+
+.single-post-thumbnail {
+	background: #b2b2b2 url(images/pattern.svg) repeat;
+}
+
+.single-post-thumbnail img {
+	display: block;
+	margin: 0 auto;
+}
+
+@media screen and (min-width: 1820px) {
+	.image-shifter {
+		width: 1060px;
+		float: none;
+		margin: 0 auto;
+	}
+}
+
+@media screen and (min-width: 1540px) and (max-width: 1820px) {
+	.image-shifter { margin-right: 380px;}
+}
+
+@media screen and (min-width: 1440px) and (max-width: 1819px) {
+	.image-shifter {
+		width: 1060px;
+		float: right;
+	}
+}
+
+.small-index-thumbnail {
+	margin-top: -1em;
+	margin-bottom: 1em;
 }
 
 /*--------------------------------------------------------------
