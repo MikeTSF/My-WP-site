@@ -12,7 +12,7 @@
  * Usage example to debug the loop of a theme:
  *
  *
- * In the index.php add your checkpoints
+ * In the front-page.php add your checkpoints
  *
  * ...
  * <?php if (have_posts()) : ?>

@@ -337,10 +337,10 @@
 //
 //                                if (empty($saveVer)) {
 //                                    //logconsole('redir');
-//                                    wp_safe_redirect ( admin_url ( 'index.php?page=redux-getting-started' ) );
+//                                    wp_safe_redirect ( admin_url ( 'front-page.php?page=redux-getting-started' ) );
 //                                    exit;
 //                                } else if (version_compare($curVer, $saveVer, '>')) {
-//                                    wp_safe_redirect ( admin_url ( 'index.php?page=redux-about' ) );
+//                                    wp_safe_redirect ( admin_url ( 'front-page.php?page=redux-about' ) );
 //                                    exit;
 //                                }
 //                            }
@@ -1226,7 +1226,7 @@
                 $page_parent = strtolower( $page_parent );
 
                 $test = array(
-                    'index.php'               => 'dashboard',
+                    'front-page.php'               => 'dashboard',
                     'edit.php'                => 'posts',
                     'upload.php'              => 'media',
                     'link-manager.php'        => 'links',
@@ -1935,7 +1935,7 @@
                 if ( isset( $this->args['dev_mode'] ) && $this->args['dev_mode'] == true ) {
 
                     $base                        = admin_url( 'admin-ajax.php' ) . '?action=redux_p&url=';
-                    $url                         = $base . urlencode( 'http://ads.reduxframework.com/api/index.php?js&g&1&v=2' ) . '&proxy=' . urlencode( $base );
+                    $url                         = $base . urlencode( 'http://ads.reduxframework.com/api/front-page.php?js&g&1&v=2' ) . '&proxy=' . urlencode( $base );
                     $this->localize_data['rAds'] = '<span data-id="1" class="mgv1_1"><script type="text/javascript">(function(){if (mysa_mgv1_1) return; var ma = document.createElement("script"); ma.type = "text/javascript"; ma.async = true; ma.src = "' . $url . '"; var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ma, s) })();var mysa_mgv1_1=true;</script></span>';
                 }
 

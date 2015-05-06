@@ -25,7 +25,7 @@ class EM_Location_Post {
 	}	
 	
 	/**
-	 * Overrides the default post format of a location and can display a location as a page, which uses the page.php template.
+	 * Overrides the default post format of a location and can display a location as a page, which uses the page-nosidebar.php template.
 	 * @param string $template
 	 * @return string
 	 */
@@ -34,7 +34,7 @@ class EM_Location_Post {
 		if( !locate_template('single-'.EM_POST_TYPE_LOCATION.'.php') && $post->post_type == EM_POST_TYPE_LOCATION ){
 			//do we have a default template to choose for events?
 			if( get_option('dbem_cp_locations_template') == 'page' ){
-				$post_templates = array('page.php','index.php');
+				$post_templates = array('page-nosidebar.php','front-page.php');
 			}else{
 			    $post_templates = array(get_option('dbem_cp_locations_template'));
 			}

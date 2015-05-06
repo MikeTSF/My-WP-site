@@ -6,7 +6,7 @@
  */
 ?>
 
-<?php if ( is_page_template( 'page-templates/front-page.php' ) || is_front_page() ) : ?>
+<?php if ( is_page_template( 'page-templates/front-page-nosidebar.php' ) || is_front_page() ) : ?>
 
 	<?php if ( is_active_sidebar( 'sidebar-10' ) ) : ?>
 		

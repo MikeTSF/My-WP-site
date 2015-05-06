@@ -7,7 +7,7 @@
  * @since Jolene 1.0
  */
  
- 		if ( is_page_template( 'page-templates/front-page.php' ) || is_front_page() ) :
+ 		if ( is_page_template( 'page-templates/front-page-nosidebar.php' ) || is_front_page() ) :
 			get_sidebar('home-bottom-content');
 		endif;
 ?>

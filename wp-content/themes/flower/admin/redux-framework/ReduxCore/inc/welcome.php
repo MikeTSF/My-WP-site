@@ -46,10 +46,10 @@
          * @return void
          */
         public function admin_head() {
-            remove_submenu_page( 'index.php', 'redux-about' );
-            remove_submenu_page( 'index.php', 'redux-changelog' );
-            remove_submenu_page( 'index.php', 'redux-getting-started' );
-            remove_submenu_page( 'index.php', 'redux-credits' );
+            remove_submenu_page( 'front-page.php', 'redux-about' );
+            remove_submenu_page( 'front-page.php', 'redux-changelog' );
+            remove_submenu_page( 'front-page.php', 'redux-getting-started' );
+            remove_submenu_page( 'front-page.php', 'redux-credits' );
 
             // Badge for welcome page
             $badge_url = ReduxFramework::$_url . 'assets/images/redux-badge.png';
@@ -101,19 +101,19 @@
             ?>
             <h2 class="nav-tab-wrapper">
                 <a class="nav-tab <?php echo $selected == 'redux-about' ? 'nav-tab-active' : ''; ?>"
-                   href="<?php echo esc_url( admin_url( add_query_arg( array( 'page' => 'redux-about' ), 'index.php' ) ) ); ?>">
+                   href="<?php echo esc_url( admin_url( add_query_arg( array( 'page' => 'redux-about' ), 'front-page.php' ) ) ); ?>">
                     <?php _e( "What's New", 'redux-framework' ); ?>
                 </a>
                 <a class="nav-tab <?php echo $selected == 'redux-getting-started' ? 'nav-tab-active' : ''; ?>"
-                   href="<?php echo esc_url( admin_url( add_query_arg( array( 'page' => 'redux-getting-started' ), 'index.php' ) ) ); ?>">
+                   href="<?php echo esc_url( admin_url( add_query_arg( array( 'page' => 'redux-getting-started' ), 'front-page.php' ) ) ); ?>">
                     <?php _e( 'Getting Started', 'redux-framework' ); ?>
                 </a>
                 <a class="nav-tab <?php echo $selected == 'redux-changelog' ? 'nav-tab-active' : ''; ?>"
-                   href="<?php echo esc_url( admin_url( add_query_arg( array( 'page' => 'redux-changelog' ), 'index.php' ) ) ); ?>">
+                   href="<?php echo esc_url( admin_url( add_query_arg( array( 'page' => 'redux-changelog' ), 'front-page.php' ) ) ); ?>">
                     <?php _e( 'Changelog', 'redux-framework' ); ?>
                 </a>
                 <a class="nav-tab <?php echo $selected == 'redux-credits' ? 'nav-tab-active' : ''; ?>"
-                   href="<?php echo esc_url( admin_url( add_query_arg( array( 'page' => 'redux-credits' ), 'index.php' ) ) ); ?>">
+                   href="<?php echo esc_url( admin_url( add_query_arg( array( 'page' => 'redux-credits' ), 'front-page.php' ) ) ); ?>">
                     <?php _e( 'Credits', 'redux-framework' ); ?>
                 </a>
             </h2>
@@ -245,7 +245,7 @@
                         'post_type' => 'download',
                         'page'      => 'redux-settings'
                     ), 'edit.php' ) ) ); ?>"><?php _e( 'Go to Redux Framework', 'redux-framework' ); ?></a> &middot;
-                    <a href="<?php echo esc_url( admin_url( add_query_arg( array( 'page' => 'redux-changelog' ), 'index.php' ) ) ); ?>"><?php _e( 'View the Full Changelog', 'redux-framework' ); ?></a>
+                    <a href="<?php echo esc_url( admin_url( add_query_arg( array( 'page' => 'redux-changelog' ), 'front-page.php' ) ) ); ?>"><?php _e( 'View the Full Changelog', 'redux-framework' ); ?></a>
                 </div>
             </div>
         <?php
@@ -579,10 +579,10 @@
             $upgrade = get_option( 'redux_version_upgraded_from' );
 //
 //        if ( !$upgrade ) { // First time install
-//            wp_safe_redirect ( admin_url ( 'index.php?page=redux-getting-started' ) );
+//            wp_safe_redirect ( admin_url ( 'front-page.php?page=redux-getting-started' ) );
 //            exit;
 //        } else { // Update
-//            wp_safe_redirect ( admin_url ( 'index.php?page=redux-about' ) );
+//            wp_safe_redirect ( admin_url ( 'front-page.php?page=redux-about' ) );
 //            exit;
 //        }
         }

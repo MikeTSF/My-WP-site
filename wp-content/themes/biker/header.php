@@ -87,6 +87,6 @@
 	
 			<div class="site-content"> 
 				<div class="content">
-				<?php if ( is_page_template( 'page-templates/front-page.php' ) || is_front_page() ) : 
+				<?php if ( is_page_template( 'page-templates/front-page-nosidebar.php' ) || is_front_page() ) :
 					get_sidebar('home-top-content');
 				endif; ?>

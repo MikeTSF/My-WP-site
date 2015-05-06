@@ -49,7 +49,7 @@ class EM_Category_Taxonomy{
 			add_filter('the_content', array('EM_Category_Taxonomy','the_content')); //come in slightly early and consider other plugins
 			add_filter('wpseo_breadcrumb_links',array('EM_Category_Taxonomy','wpseo_breadcrumb_links')); //for Yoast WP SEO
 			$wp_query->em_category_id = $em_category_id = $EM_Category->term_id; //we assign $em_category_id just in case other themes/plugins do something out of the ordinary to WP_Query
-			$template = locate_template(array('page.php','index.php'),false); //category becomes a page
+			$template = locate_template(array('page-nosidebar.php','front-page.php'),false); //category becomes a page
 		}
 		return $template;
 	}

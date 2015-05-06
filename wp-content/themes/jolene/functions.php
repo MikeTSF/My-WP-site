@@ -554,7 +554,7 @@ function jolene_body_class( $classes ) {
 	
 		// Enable custom class only if the left sidebar is active.
 		if ( ! is_page_template( 'page-templates/full-width.php' ) && ! is_page_template( 'page-templates/full-width-wide.php' ) && ! is_page_template( 'page-templates/right-sidebar.php' ) ) {
-			if ( is_front_page() || is_page_template( 'page-templates/front-page.php' ) ) {
+			if ( is_front_page() || is_page_template( 'page-templates/front-page-nosidebar.php' ) ) {
 				if ( is_active_sidebar( 'sidebar-13' ) )
 					$classes[] = 'left-sidebar-is-on';
 			}
@@ -567,7 +567,7 @@ function jolene_body_class( $classes ) {
 		}
 		
 		// Enable custom class only if the top sidebar is active.
-		if ( (is_page_template( 'page-templates/front-page.php' ) || is_front_page()) ) {
+		if ( (is_page_template( 'page-templates/front-page-nosidebar.php' ) || is_front_page()) ) {
 			if( is_active_sidebar( 'sidebar-10' ) )
 				$classes[] = 'top-sidebar-is-on';
 		}
@@ -578,7 +578,7 @@ function jolene_body_class( $classes ) {
 		// Enable custom class only if the left sidebar and the right sidebar are inactive.
 		if ( is_page_template( 'page-templates/full-width.php' ) || is_page_template( 'page-templates/full-width-wide.php' ))
 			$classes[] = 'no-sidebar';
-		elseif ( is_front_page() || is_page_template( 'page-templates/front-page.php' ) ) {
+		elseif ( is_front_page() || is_page_template( 'page-templates/front-page-nosidebar.php' ) ) {
 			if( ! is_active_sidebar( 'sidebar-13' ) && ! is_active_sidebar( 'sidebar-14' ) )
 				$classes[] = 'no-sidebar';
 		}
@@ -592,7 +592,7 @@ function jolene_body_class( $classes ) {
 		// Enable custom class only if the left sidebar is inactive.
 		if ( is_page_template( 'page-templates/full-width.php' ) || is_page_template( 'page-templates/full-width-wide.php' ) || is_page_template( 'page-templates/right-sidebar.php' ))
 			$classes[] = 'no-left-sidebar';	
-		elseif ( is_front_page() || is_page_template( 'page-templates/front-page.php' ) ) {
+		elseif ( is_front_page() || is_page_template( 'page-templates/front-page-nosidebar.php' ) ) {
 			if ( ! is_active_sidebar( 'sidebar-13' ))
 				$classes[] = 'no-left-sidebar';	
 		}
@@ -608,7 +608,7 @@ function jolene_body_class( $classes ) {
 				&& ! is_page_template( 'page-templates/full-width-wide.php' ) 
 				&& ! is_page_template( 'page-templates/right-sidebar.php') 
 				&& ! is_page_template( 'page-templates/left-sidebar.php') ) {
-			if (  is_page_template( 'page-templates/front-page.php' ) || is_front_page() ) {
+			if (  is_page_template( 'page-templates/front-page-nosidebar.php' ) || is_front_page() ) {
 				if ( is_active_sidebar( 'sidebar-13' ) && is_active_sidebar( 'sidebar-14' ))
 					$classes[] = 'two-sidebars';
 			}
@@ -624,7 +624,7 @@ function jolene_body_class( $classes ) {
 		if ( ! is_page_template( 'page-templates/full-width.php' ) && ! is_page_template( 'page-templates/full-width-wide.php' ) && ! is_page_template( 'page-templates/left-sidebar.php') ) {
 			if ( is_page_template( 'page-templates/right-sidebar.php' ) && is_active_sidebar( 'sidebar-4' ) )
 				$classes[] = 'right-sidebar-is-on';
-			elseif ( is_page_template( 'page-templates/front-page.php' ) || is_front_page() ) {
+			elseif ( is_page_template( 'page-templates/front-page-nosidebar.php' ) || is_front_page() ) {
 				if( !is_active_sidebar( 'sidebar-13' ) && is_active_sidebar( 'sidebar-14' ) )
 					$classes[] = 'right-sidebar-is-on';
 			}
@@ -1097,7 +1097,7 @@ function jolene_paging_nav() {
 	$pagenum_link = remove_query_arg( array_keys( $query_args ), $pagenum_link );
 	$pagenum_link = trailingslashit( $pagenum_link ) . '%_%';
 
-	$format  = $GLOBALS['wp_rewrite']->using_index_permalinks() && ! strpos( $pagenum_link, 'index.php' ) ? 'index.php/' : '';
+	$format  = $GLOBALS['wp_rewrite']->using_index_permalinks() && ! strpos( $pagenum_link, 'front-page.php' ) ? 'front-page.php/' : '';
 	$format .= $GLOBALS['wp_rewrite']->using_permalinks() ? user_trailingslashit( 'page/%#%', 'paged' ) : '?paged=%#%';
 
 	$links = paginate_links( array(
@@ -1256,7 +1256,7 @@ function jolene_content_width() {
 			$width = get_theme_mod('content_width_no_sidebar_page', $defaults['content_width_no_sidebar_page']);
 	}
 	elseif ( is_page() ) {
-		if( is_page_template( 'page-templates/front-page.php' )) {
+		if( is_page_template( 'page-templates/front-page-nosidebar.php' )) {
 			if( ! is_active_sidebar( 'sidebar-13' ) && is_active_sidebar( 'sidebar-14' )) {//right sidebar
 				$width = get_theme_mod('content_width_right_sidebar_page', $defaults['content_width_page']);
 			}

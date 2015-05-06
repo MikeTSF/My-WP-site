@@ -1,12 +1,23 @@
 <?php
 /**
- * The template used for displaying page content in page.php
+ * The template used for displaying page content in page-nosidebar.php
  *
  * @package my-simone
  */
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+
+	<?php
+	if (has_post_thumbnail()) {
+		echo '<div class="single-post-thumbnail clear">';
+		echo '<div class="image-shifter">';
+		echo the_post_thumbnail('large-thumb');
+		echo '</div>';
+		echo '</div>';
+	}
+	?>
+
 	<header class="entry-header">
 		<h1 class="entry-title"><?php the_title(); ?></h1>
 	</header><!-- .entry-header -->

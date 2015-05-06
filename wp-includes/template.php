@@ -212,7 +212,7 @@ function get_tag_template() {
  * The taxonomy and term template is checked and used first, if it exists.
  * Second, just the taxonomy template is checked, and then finally, taxonomy.php
  * template is used. If none of the files exist, then it will fall back on to
- * index.php.
+ * front-page.php.
  *
  * The template path is filterable via the 'taxonomy_template' hook.
  *
@@ -256,7 +256,7 @@ function get_date_template() {
  * Retrieve path of home template in current or parent template.
  *
  * This is the template used for the page containing the blog posts.
- * Attempts to locate 'home.php' first before falling back to 'index.php'.
+ * Attempts to locate 'home.php' first before falling back to 'front-page.php'.
  *
  * The template path is filterable via the 'home_template' hook.
  *
@@ -267,7 +267,7 @@ function get_date_template() {
  * @return string Full path to home template file.
  */
 function get_home_template() {
-	$templates = array( 'home.php', 'index.php' );
+	$templates = array( 'home.php', 'front-page.php' );
 
 	return get_query_template( 'home', $templates );
 }
@@ -275,7 +275,7 @@ function get_home_template() {
 /**
  * Retrieve path of front-page template in current or parent template.
  *
- * Looks for 'front-page.php'. The template path is filterable via the
+ * Looks for 'front-page-nosidebar.php'. The template path is filterable via the
  * 'front_page_template' hook.
  *
  * @since 3.0.0
@@ -285,7 +285,7 @@ function get_home_template() {
  * @return string Full path to front page template file.
  */
 function get_front_page_template() {
-	$templates = array('front-page.php');
+	$templates = array('front-page-nosidebar.php');
 
 	return get_query_template( 'front_page', $templates );
 }
@@ -295,7 +295,7 @@ function get_front_page_template() {
  *
  * Will first look for the specifically assigned page template.
  * Then will search for 'page-{slug}.php', followed by 'page-{id}.php',
- * and finally 'page.php'.
+ * and finally 'page-nosidebar.php'.
  *
  * The template path is filterable via the 'page_template' hook.
  *
@@ -324,7 +324,7 @@ function get_page_template() {
 		$templates[] = "page-$pagename.php";
 	if ( $id )
 		$templates[] = "page-$id.php";
-	$templates[] = 'page.php';
+	$templates[] = 'page-nosidebar.php';
 
 	return get_query_template( 'page', $templates );
 }

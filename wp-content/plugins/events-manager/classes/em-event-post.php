@@ -50,7 +50,7 @@ class EM_Event_Post {
 	}
 	
 	/**
-	 * Overrides the default post format of an event and can display an event as a page, which uses the page.php template.
+	 * Overrides the default post format of an event and can display an event as a page, which uses the page-nosidebar.php template.
 	 * @param string $template
 	 * @return string
 	 */
@@ -59,7 +59,7 @@ class EM_Event_Post {
 		if( !locate_template('single-'.EM_POST_TYPE_EVENT.'.php') && $post->post_type == EM_POST_TYPE_EVENT ){
 			//do we have a default template to choose for events?
 			if( get_option('dbem_cp_events_template') == 'page' ){
-				$post_templates = array('page.php','index.php');
+				$post_templates = array('page-nosidebar.php','front-page.php');
 			}else{
 			    $post_templates = array(get_option('dbem_cp_events_template'));
 			}

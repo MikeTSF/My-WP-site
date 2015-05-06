@@ -10,7 +10,7 @@
 
 /** The descriptions for theme files. */
 $wp_file_descriptions = array(
-	'index.php' => __( 'Main Index Template' ),
+	'front-page.php' => __( 'Main Index Template' ),
 	'style.css' => __( 'Stylesheet' ),
 	'editor-style.css' => __( 'Visual Editor Stylesheet' ),
 	'editor-style-rtl.css' => __( 'Visual Editor RTL Stylesheet' ),
@@ -24,7 +24,7 @@ $wp_file_descriptions = array(
 	'author.php' => __( 'Author Template' ),
 	'tag.php' => __( 'Tag Template' ),
 	'category.php' => __( 'Category Template' ),
-	'page.php' => __( 'Page Template' ),
+	'page-nosidebar.php' => __( 'Page Template' ),
 	'search.php' => __( 'Search Results' ),
 	'searchform.php' => __( 'Search Form' ),
 	'single.php' => __( 'Single Post' ),
@@ -880,7 +880,7 @@ function WP_Filesystem( $args = false, $context = false, $allow_relaxed_file_own
 	if ( ! defined('FS_CHMOD_DIR') )
 		define('FS_CHMOD_DIR', ( fileperms( ABSPATH ) & 0777 | 0755 ) );
 	if ( ! defined('FS_CHMOD_FILE') )
-		define('FS_CHMOD_FILE', ( fileperms( ABSPATH . 'index.php' ) & 0777 | 0644 ) );
+		define('FS_CHMOD_FILE', ( fileperms( ABSPATH . 'front-page.php' ) & 0777 | 0644 ) );
 
 	return true;
 }

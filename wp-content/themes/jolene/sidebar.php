@@ -19,7 +19,7 @@
 	$defaults = jolene_get_defaults();
 ?>
 
-<?php if ( is_front_page() || is_page_template( 'page-templates/front-page.php' ) ) : ?>
+<?php if ( is_front_page() || is_page_template( 'page-templates/front-page-nosidebar.php' ) ) : ?>
 	
 	<?php if ( is_active_sidebar( 'sidebar-13' ) ) : ?>
 		<div class="sidebar-left">

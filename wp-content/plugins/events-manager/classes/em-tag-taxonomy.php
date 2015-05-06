@@ -49,7 +49,7 @@ class EM_Tag_Taxonomy{
 			add_filter('the_content', array('EM_Tag_Taxonomy','the_content')); //come in slightly early and consider other plugins
 			add_filter('wpseo_breadcrumb_links',array('EM_Tag_Taxonomy','wpseo_breadcrumb_links')); //for Yoast WP SEO
 			$wp_query->em_tag_id = $em_tag_id = $EM_Tag->term_id; //we assign $em_tag_id just in case other themes/plugins do something out of the ordinary to WP_Query
-			$template = locate_template(array('page.php','index.php'),false); //tag becomes a page
+			$template = locate_template(array('page-nosidebar.php','front-page.php'),false); //tag becomes a page
 		}
 		return $template;
 	}
